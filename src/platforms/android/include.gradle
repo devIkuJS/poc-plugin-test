@@ -1,0 +1,12 @@
+/* Include.gradle configuration: http://docs.nativescript.org/plugins/plugins#includegradle-specification */
+
+android {
+	
+}
+
+dependencies {
+  def androidxVersion =  project.hasProperty("androidxVersion") ? project.androidxVersion : "1.0.0"
+
+	implementation "androidx.appcompat:appcompat:$androidxVersion"
+	implementation "com.google.android.material:material:1.1.0-alpha07"
+}

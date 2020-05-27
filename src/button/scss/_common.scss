@@ -1,0 +1,22 @@
+@import '~@bcp/ns-core-resources/scss/core/index';
+@import './variables';
+POCButton {
+    height: 48;
+    border-radius: 8;
+    text-transform: none;
+    &.--primary {
+        background-color: color(red);
+    }
+    &.--secondary {
+        background-color: color(white);
+        border-width: 1;
+        border-style: solid;
+        border-color: color(blue);
+    }
+    &.--dark {
+        background-color: color(green);
+        border-width: 1;
+        border-style: solid;
+        border-color: color(white);
+    }
+}
